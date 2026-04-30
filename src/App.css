@@ -1,4 +1,4 @@
-.App {
+.App h1{
   text-align: center;
 }
 
@@ -13,19 +13,46 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.pokemon-container{
+border: 3px solid rgb(255, 238, 0); 
+border-radius: 10px;
+display: flex;
+background: #8fc263;
+align-items: center;
+justify-content: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: rgb(0, 0, 0);
+height: 420px;
+width: 300px;
 }
 
+.pokemon-card img{
+  transform: scale(2.0); 
+  height: 130px;
+  width: 130px;  
+  margin-left: 70px;
+  margin-top: -37px;
+}
+.HPeMAIS{
+ font-size: 30px;
+ margin-top: 170px;
+ margin-left: 16px;
+}
+.card{
+    border: 1px solid rgb(0, 0, 0);
+  background-image: url('../public/pkemon.jpeg');
+  background-size: cover;
+  display: flex;
+  margin-top: -180px;
+  height: 170px;
+  width: 280px;  
+}
+
+
 .App-link {
-  color: #61dafb;
+  color: #5b1f83;
 }
 
 @keyframes App-logo-spin {
