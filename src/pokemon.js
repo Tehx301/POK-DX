@@ -40,18 +40,26 @@ function App() {
   return (
     <div className="App" >
       <h1>poke card</h1>
-      <div className="pokemon-container"> 
-        <div className="card">
-          <div className="pokemon-card">
-            <div className="nomepokemon">
-              <h3>{pokemons.name}</h3>
-            </div>
-            <img src={pokemons.sprites.front_default} alt={pokemons.name} />
-            <div className="HPeMAIS">
-              <h3>{pokemons.stats[0].stat.name + ' ' +
-                pokemons.stats[0].base_stat + ' ' + pokemons.stats[1].stat.name + ' ' +
-                pokemons.stats[0].base_stat}</h3>
-            </div>
+      <div className="pokemon-container">
+
+        <div className="pokemon-card">
+          <div className="nomepokemon">
+            <h3>{pokemons.name}</h3>
+          </div>
+          <div  className="imagen">
+          <img src={pokemons.sprites.front_default} alt={pokemons.name} />
+          </div>
+          <div  className="fundo">
+          <img src="/pkemon.jpeg" alt="Imagem de um Pokemon" />
+          </div>
+          <div className="HP">
+            <h3>{pokemons.stats[0].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
+          </div>
+          <div className="attack">
+            <h3>{pokemons.stats[1].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
+          </div>
+          <div className="tipo">
+            <h3>{pokemons.types[0].type.name}</h3>
           </div>
         </div>
       </div>
