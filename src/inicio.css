@@ -1,0 +1,21 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fundo img{
+ position: fixed;    
+ margin-left: -37px;    
+ margin-top: -475px;   
+ width: 517vh;   
+height: 244vh;
+object-fit: cover;
+z-index: -1; 
+}
+.treinador img{
+    position: absolute;
+    z-index: 99;
+}
+
+
+
