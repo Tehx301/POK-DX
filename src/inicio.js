@@ -9,7 +9,7 @@ function Trainer() {
                 <img src="/fundo.jpeg" alt="Cenário" />
             </div>
             <div className="treinador">
-                <img src="/treinador.final.png" alt="Treinador" />
+                <img src="/ummm.png" alt="Treinador" />
             </div>
         </div>
     );

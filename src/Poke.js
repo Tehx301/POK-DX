@@ -40,7 +40,7 @@ function Poke() {
   return (
     <div className="App" >
       <h1>poke card</h1>
-
+     
       <div className="pokemon-container">
 
         <div className="pokemon-card">
@@ -49,12 +49,11 @@ function Poke() {
             <h3>{pokemons.name}</h3>
           </div>
 
-          <div className="fundo">
-            <img src="/pkemon.jpeg" alt="Imagem de um Pokemon" />
-          </div>
-
           <div className="imagen">
             <img src={pokemons.sprites.front_default} alt={pokemons.name} />
+          </div>
+          <div className="imagen2">
+            <img src="/fundo_card.jpeg" alt="Cenário" />
           </div>
 
           <div className="HP">
@@ -72,7 +71,7 @@ function Poke() {
         </div>
 
       </div>
-      
+
     </div>
   );
 }

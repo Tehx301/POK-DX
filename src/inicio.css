@@ -5,16 +5,15 @@
 }
 .fundo img{
  position: fixed;    
- margin-left: -37px;    
- margin-top: -475px;   
- width: 517vh;   
-height: 244vh;
+ width: 210vh;   
+height: 100vh;
 object-fit: cover;
 z-index: -1; 
 }
 .treinador img{
     position: absolute;
-    z-index: 99;
+    margin-left: 720px;    
+    margin-top: 120px;  
 }
 
 
