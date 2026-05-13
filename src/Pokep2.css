@@ -1,0 +1,47 @@
+.pokemon-container{
+    border: 3px solid rgb(255, 238, 0); 
+    border-radius: 10px;
+    height: 450px;
+    width: 330px;  
+    display: flex;
+    background: #8ab367;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+  }
+  .nomepokemon {
+    font-size: 25px;
+    margin-top: -2px;
+    margin-left: 7px;
+    }
+   .imagen img{
+    transform: scale(2.7); 
+    height: 100px;
+    width: 100px;  
+    margin-left: 120px;
+    margin-top: 40px; 
+  }
+  .imagen2 img{
+    border: 1px solid rgb(0, 0, 0);
+    height: 180px;
+    width: 300px; 
+    margin-left: 11px;
+    margin-top: -142px; 
+  }
+  
+  .HP {
+   font-size: 30px;
+   margin-top: 2px;
+   margin-left: 5px;
+  }
+  .attack {
+    font-size: 30px;
+    margin-top: 140px;
+    margin-left: 166px;
+   }
+   .tipo {
+    font-size: 25px;
+    margin-top: -445px;
+    margin-left: 240px;
+   }
+  
+  
