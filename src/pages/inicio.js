@@ -1,6 +1,10 @@
 import React from 'react';
 import './inicio.css';
 import { Link } from "react-router-dom";
+import fundo from "../assets/fundo.jpeg"
+import treinador from "../assets/ummm.png"
+import botao from "../assets/bol.png"
+
 
 
 function Trainer() {
@@ -8,12 +12,13 @@ function Trainer() {
     return (
         <div className="conteiner">
             <div className="fundo">
-                <img src="/fundo.jpeg" alt="Cenário" />
+                <img src={fundo} alt="Cenário" />
             </div>
 
             <div className="treinador">
-                <img src="/ummm.png" alt="Treinador" />
+                <img src={treinador} alt="Treinador" />
             </div>
+
 
             <div className="irParaotrapagia">
                 <div className="status">
@@ -30,12 +35,13 @@ function Trainer() {
                         <h3>você tem 6 pokebolas</h3>
                     </div>
                 </div>
-                <Link to="/Poke" className="botao"> <img src="/bol.png" /></Link>
-                <Link to="/Pokep2" className="botao"> <img src="/bol.png" /></Link>
-                <Link to="/" className="botao"> <img src="/bol.png" /></Link>
-                <Link to="/" className="botao"> <img src="/bol.png" /></Link>
-                <Link to="/" className="botao"> <img src="/bol.png" /></Link>
-                <Link to="/" className="botao"> <img src="/bol.png" /></Link>
+                <Link to="/Poke" className="botao"> <img src={botao} /></Link>
+                <Link to="/Pokep2" className="botao"> <img src={botao} /></Link>
+                <Link to="/" className="botao"> <img src={botao} /></Link>
+                <Link to="/" className="botao"> <img src={botao} /></Link>
+                <Link to="/" className="botao"> <img src={botao} /></Link>
+                <Link to="/" className="botao"> <img src={botao} /></Link>
+
             </div>
         </div>
     );

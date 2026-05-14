@@ -6,12 +6,16 @@
 .conteiner{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
 .irParaotrapagia{
   border: 1px solid #ffffff; 
   border-radius: 10px;
-  height: 400px;
-  width: 400px;  
+ margin-top: 100px;
+  height: 380px;
+  width: 380px;  
   align-content: center;
+  margin-left: 700px;
+  opacity: 0.8;
   background-color: #1f032f;
  color: #ffffff;
 }
@@ -31,7 +35,7 @@
 }
 .pokebolas{
  margin-left: 90px; 
- margin-top: 167px;
+ margin-top: 137px;
 }
 
 .botao img{
@@ -39,21 +43,19 @@
  background: #1f032f;
  height: 40px;
  width: 40px; 
- margin-left: 20px; 
+ margin-left: 16px; 
  margin-top: 9px;
 }
 .fundo img{
  position: fixed;    
- width: 210vh;   
+ width: 280vh;   
 height: 100vh;
+margin-top: -100px;
 object-fit: cover;
 z-index: -1; 
 }
 .treinador img{
     position: absolute;
-    margin-left: 720px;    
-    margin-top: 120px;  
+    margin-left: 1040px;    
+    margin-top: 40px;  
 }
-
-
-

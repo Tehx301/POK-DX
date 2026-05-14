@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Pokep2.css';
-
+import fundocard from "../assets/fundo_card.jpeg"
 
 function Pokep2() {
     const [pokemons, serPokemon] = useState({});
@@ -55,7 +55,7 @@ function Pokep2() {
                         <img src={pokemons.sprites.front_default} alt={pokemons.name} />
                     </div>
                     <div className="imagen2">
-                        <img src="/fundo_card.jpeg" alt="Cenário" />
+                        <img src={fundocard} alt="Cenário" />
                     </div>
 
                     <div className="HP">

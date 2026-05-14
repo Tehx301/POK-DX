@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Poke from "./Poke";
-import Trainer from "./inicio"
-import Pokep2 from "./Pokep2"
+import Trainer from "./pages/inicio";
+import Poke from "./pages/Poke";
+import Pokep2 from "./pages/Pokep2";
 
 function App() {
     return (
