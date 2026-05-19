@@ -8,16 +8,16 @@
 }
 
 .irParaotrapagia{
-  border: 1px solid #ffffff; 
-  border-radius: 10px;
- margin-top: 100px;
-  height: 380px;
-  width: 380px;  
-  align-content: center;
-  margin-left: 700px;
-  opacity: 0.8;
-  background-color: #1f032f;
- color: #ffffff;
+  border: 1px solid #ffffff; /* macha na espesura da borda e muda a cor */
+  border-radius: 15px; /* aredonda as pontas */
+ margin-top: 100px; /* mache o elemento para cime ou para baixo */
+  height: 380px; /* aumenta a largura */
+  width: 380px;  /* aumenta a altura */
+  align-content: center; /*  */
+  margin-left: 445px; /*  */
+  opacity: 0.8; /*  */
+  background-color: #1f032f; /*  */
+ color: #ffffff; /*  */
 }
 .nome{
  color: #592c74; 
@@ -47,8 +47,8 @@
  margin-top: 9px;
 }
 .fundo img{
- position: fixed;    
- width: 280vh;   
+ position: absolute;    
+ width: 207vh;   
 height: 100vh;
 margin-top: -100px;
 object-fit: cover;
@@ -56,6 +56,7 @@ z-index: -1;
 }
 .treinador img{
     position: absolute;
-    margin-left: 1040px;    
+    margin-left: 739px;    
     margin-top: 40px;  
+    z-index: 0; 
 }
