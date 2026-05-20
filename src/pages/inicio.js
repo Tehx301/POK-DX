@@ -11,12 +11,10 @@ import treinador from "../assets/ummm.png"
 import botao from "../assets/bol.png"
 /*↑ Importa a imagem do botão*/
 
-
 /*↓ Define a função do componente chamada Trainer*/
 function Trainer() {
-    /*Div principal que envelopa toda a tela*/
     return (
-
+        /*Div principal que envelopa toda a tela*/
         <div className="conteiner">
             {/* Bloco responsável por exibir a imagem de fundo do app*/}
             <div className="fundo">
@@ -58,10 +56,7 @@ function Trainer() {
                 </div>
                 <Link to="/Poke" className="botao"> <img src={botao} /></Link>
                 <Link to="/Pokep2" className="botao"> <img src={botao} /></Link>
-                <Link to="/" className="botao"> <img src={botao} /></Link>
-                <Link to="/" className="botao"> <img src={botao} /></Link>
-                <Link to="/" className="botao"> <img src={botao} /></Link>
-                <Link to="/" className="botao"> <img src={botao} /></Link>
+                
 
             </div>
         </div>

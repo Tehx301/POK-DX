@@ -1,30 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Pokep2.css';
-import fundocard from "../assets/fundo_card.jpeg"
+import fundocard from "../assets/fundo_card.jpeg";
+import useFetchPokeapi from "../../hooks/useFetchPokeapi";
 
 function Pokep2() {
-    const [pokemons, serPokemon] = useState({});
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
-
-    useEffect(() => {
-        const getData = async () => {
-            try {
-                const res = await
-                    axios.get('https://pokeapi.co/api/v2/pokemon/caterpie');
-                serPokemon(res.data);
-                console.log('success:', res.data);
-                setLoading(false);
-            }
-            catch (err) {
-                console.error("Erro ao caregar API", err);
-                setLoading(false)
-                setError(true)
-            }
-        };
-        getData();
-    }, {})
+    const {pokemons, loading, error} = useFetchPokeapi("caterpie"); 
 
 
     if (loading) return (

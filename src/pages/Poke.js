@@ -1,30 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Poke.css';
-import fundocard from "../assets/fundo_card.jpeg"
+import fundocard from "../assets/fundo_card.jpeg";
+import useFetchPokeapi from "../../hooks/useFetchPokeapi";
 
 function Poke() {
-  const [pokemons, serPokemon] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const res = await
-          axios.get('https://pokeapi.co/api/v2/pokemon/chespin');
-        serPokemon(res.data);
-        console.log('success:', res.data);
-        setLoading(false);
-      }
-      catch (err) {
-        console.error("Erro ao caregar API", err);
-        setLoading(false)
-        setError(true)
-      }
-    };
-    getData();
-  }, {})
+  const {pokemons, loading, error} = useFetchPokeapi("chespin"); 
 
   if (loading) return (
     <div className="loader">
@@ -36,7 +17,6 @@ function Poke() {
       cocorreu um erro inesperado
     </div>
   );
-
 
   return (
     <div className="App" >

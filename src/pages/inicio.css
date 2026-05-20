@@ -4,27 +4,27 @@
     box-sizing: border-box;
 }
 .conteiner{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif /* altera a font */
 }
 
 .irParaotrapagia{
   border: 1px solid #ffffff; /* macha na espesura da borda e muda a cor */
   border-radius: 15px; /* aredonda as pontas */
- margin-top: 100px; /* mache o elemento para cime ou para baixo */
+ margin-top: 100px; /* mache o/os elemento para cime ou para baixo */
   height: 380px; /* aumenta a largura */
   width: 380px;  /* aumenta a altura */
   align-content: center; /*  */
-  margin-left: 445px; /*  */
-  opacity: 0.8; /*  */
-  background-color: #1f032f; /*  */
- color: #ffffff; /*  */
+  margin-left: 445px; /* move o/os elementos para o lado */
+  opacity: 0.8; /* deicha o elemento mas tramparente */
+  background: #1f032f; /* muda a cor do elemento */
+ color: #ffffff; /* muda a cor do texto */
 }
 .nome{
  color: #592c74; 
  margin-left: 10px; 
 }
 .nikname{
- font-size: 30px;
+ font-size: 30px; /* almenta ou diminui a fonte */
  margin-left: 100px; 
  margin-top: 10px; 
 }
@@ -47,12 +47,12 @@
  margin-top: 9px;
 }
 .fundo img{
- position: absolute;    
+ position: absolute; /* Remove o elemento do fluxo da página e permite usar top, bottom, left e right */
  width: 207vh;   
 height: 100vh;
 margin-top: -100px;
-object-fit: cover;
-z-index: -1; 
+object-fit: cover; /* Preenche o box cortando os excessos e mantendo a proporção */
+z-index: -1; /* doixa o elemento na utima camada */
 }
 .treinador img{
     position: absolute;
