@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Poke.css';
-import fundocard from "../assets/fundo_card.jpeg";
-import useFetchPokeapi from "../../hooks/useFetchPokeapi";
+import fundocard from "../assets/planta.jpg";
+import useFetchPokeapi from "../hooks/useFetchPokeApi";
 
 function Poke() {
   const {pokemons, loading, error} = useFetchPokeapi("chespin"); 

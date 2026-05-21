@@ -4,11 +4,11 @@ import './inicio.css';
 /*↑ Importa o arquivo o CSS para poder estylizar a pagina*/
 import { Link } from "react-router-dom";
 /*↑ Importa a ferramenta de navegação para mudar de página sem recarregar o navegador*/
-import fundo from "../assets/fundo.jpeg"
+import fundo from "../assets/fundo.jpeg";
 /*↑ Importa a imagem do fundo*/
-import treinador from "../assets/ummm.png"
+import treinador from "../assets/ummm.png";
 /*↑ Importa a imagem do treinador*/
-import botao from "../assets/bol.png"
+import botao from "../assets/bol.png";
 /*↑ Importa a imagem do botão*/
 
 /*↓ Define a função do componente chamada Trainer*/
@@ -56,7 +56,7 @@ function Trainer() {
                 </div>
                 <Link to="/Poke" className="botao"> <img src={botao} /></Link>
                 <Link to="/Pokep2" className="botao"> <img src={botao} /></Link>
-                
+                <Link to="/PokePrincipal" className="botao"> <img src={botao} /></Link>
 
             </div>
         </div>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Pokep2.css';
-import fundocard from "../assets/fundo_card.jpeg";
+import './PokePrincipal.css';
+import fundocard from "../assets/Pokemon.jpg";
 import useFetchPokeapi from "../hooks/useFetchPokeApi";
 
-function Pokep2() {
-    const {pokemons, loading, error} = useFetchPokeapi("caterpie"); 
+function PokePrincipal() {
+    const {pokemons, loading, error} = useFetchPokeapi("Marshadow"); 
 
 
     if (loading) return (
@@ -24,30 +24,30 @@ function Pokep2() {
         <div className="App" >
             <h1>poke card</h1>
 
-            <div className="pokemon-containerPoke2">
+            <div className="pokemon-containerPrincipal">
 
-                <div className="pokemon-cardPoke2">
+                <div className="pokemon-cardPrincipal">
 
-                    <div className="nomepokemonPoke2">
+                    <div className="nomepokemonPrincipal">
                         <h3>{pokemons.name}</h3>
                     </div>
 
-                    <div className="imagenPoke2">
+                    <div className="imagenPrincipal">
                         <img src={pokemons.sprites.front_default} alt={pokemons.name} />
                     </div>
-                    <div className="imagen2Poke2">
-                        <img src={fundocard} alt="CenárioPoke2" />
+                    <div className="imagen2Principal">
+                        <img src={fundocard} alt="CenárioPrincipal" />
                     </div>
 
-                    <div className="HPPoke2">
+                    <div className="HPPrincipal">
                         <h3>{pokemons.stats[0].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
                     </div>
 
-                    <div className="attackPoke2">
+                    <div className="attackPrincipal">
                         <h3>{pokemons.stats[1].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
                     </div>
 
-                    <div className="tipoPoke2">
+                    <div className="tipoPrincipal">
                         <h3>{pokemons.types[0].type.name}</h3>
                     </div>
 
@@ -58,4 +58,4 @@ function Pokep2() {
         </div>
     );
 }
-export default Pokep2;
+export default PokePrincipal;
