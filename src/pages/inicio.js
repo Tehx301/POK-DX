@@ -54,9 +54,9 @@ function Trainer() {
 
                     {/*links que usam a imagem com nome "botao" que é a imagen de uma pokebola, para navegar pelos pokemons*/}
                 </div>
-                <Link to="/Poke" className="botao"> <img src={botao} /></Link>
-                <Link to="/Pokep2" className="botao"> <img src={botao} /></Link>
-                <Link to="/PokePrincipal" className="botao"> <img src={botao} /></Link>
+                <Link to="/Poke/chespin" className="botao"> <img src={botao} /></Link>
+                <Link to="/Poke/caterpie" className="botao"> <img src={botao} /></Link>
+                <Link to="/Poke/Marshadow" className="botao"> <img src={botao} /></Link>
 
             </div>
         </div>

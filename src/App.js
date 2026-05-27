@@ -10,9 +10,8 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Trainer />} />
-                <Route path="/Poke/" element={<Poke />} />
-                <Route path="/Pokep2/" element={<Pokep2 />} />
-                <Route path="/PokePrincipal/" element={<PokePrincipal />} />
+                <Route path="/Poke/:id" element={<Poke />} />
+            
             </Routes>
         </BrowserRouter>
     )

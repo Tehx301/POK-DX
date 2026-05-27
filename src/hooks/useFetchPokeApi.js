@@ -17,7 +17,7 @@ function useFetchPokeapi(pokemon) {
     // Função assíncrona interna para lidar com o Axios e o fluxo de dados
     const getData = async () => {
       try {
-        // Faz a requisição GET concatenando o nome/ID do pokemon na URL da API
+        // busca um pokemon na api definida
         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`,
           {
             // Headers para desativar o cache do navegador e garantir dados sempre novos
