@@ -5,6 +5,7 @@ import TipoInseto from "../assets/fundo_card.jpeg";
 import TipoPlanta from "../assets/planta.jpg";
 import TipoFantasma from "../assets/Pokemon.jpg";
 import TipoSteel from "../assets/metal.jpg";
+import atrasdocard from "../assets/fundo2.jpeg";
 import useFetchPokeapi from "../hooks/useFetchPokeApi";
 
 import { useParams } from "react-router-dom";
@@ -56,8 +57,12 @@ function Poke() {
               <div className="imagen">
                 <img src={pokemons.sprites.front_default} alt={pokemons.name} />
               </div>
-              <div className="FundoDasCarta">
 
+
+              <div className="FundoDasCarta">
+                <div className="imagenatrascard">
+                  <img src={atrasdocard} alt="card" />
+                </div>
               </div>
               <div className="imagen2">
                 <img src={imagemFundo} alt="Cenário" />

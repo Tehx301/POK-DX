@@ -1,3 +1,9 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App h1{
   text-align: center;
   padding: 50px;
@@ -6,7 +12,6 @@
   color: white;
 }
 .App{
-  background: #1f032f;
   padding: 640px;
   margin-top: -650px;
 }
@@ -20,6 +25,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 .tipo-grass .pokemon-container{
   border: 3px solid rgb(255, 238, 0); 
   border-radius: 10px;
@@ -29,6 +36,7 @@
   background: #8fc263;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(0, 0, 0);
+
 }
 .nomepokemon {
   font-size: 25px;
@@ -143,6 +151,16 @@
 
 .App-link {
   color: #5b1f83;
+}
+
+.imagenatrascard img{
+  position: absolute; 
+  width: 207vh;   
+  height: 100vh;
+  margin-top: -320px;
+  margin-left: -640px;
+  object-fit: cover; /* Preenche o box cortando os excessos e mantendo a proporção */
+  z-index: -1; /* doixa o elemento na utima camada */
 }
 
 @keyframes App-logo-spin {
