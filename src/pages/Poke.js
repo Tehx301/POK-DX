@@ -4,13 +4,14 @@ import './Poke.css';
 import TipoInseto from "../assets/fundo_card.jpeg";
 import TipoPlanta from "../assets/planta.jpg";
 import TipoFantasma from "../assets/Pokemon.jpg";
+import TipoSteel from "../assets/metal.jpg";
 import useFetchPokeapi from "../hooks/useFetchPokeApi";
 
 import { useParams } from "react-router-dom";
 
 function Poke() {
   const { id } = useParams();/* busca o id da uma api */
-  const { pokemons, loading, error } = useFetchPokeapi(id); 
+  const { pokemons, loading, error } = useFetchPokeapi(id);
 
   if (loading) return (
     <div className="loader">
@@ -31,6 +32,9 @@ function Poke() {
     imagemFundo = TipoFantasma;
   } else if (pokemons.types[0].type.name === 'bug') {
     imagemFundo = TipoInseto;
+  }
+  else if (pokemons.types[0].type.name === 'steel') {
+    imagemFundo = TipoSteel;
   }
 
 

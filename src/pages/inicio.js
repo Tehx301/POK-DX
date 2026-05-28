@@ -57,7 +57,7 @@ function Trainer() {
                 <Link to="/Poke/chespin" className="botao"> <img src={botao} /></Link>
                 <Link to="/Poke/caterpie" className="botao"> <img src={botao} /></Link>
                 <Link to="/Poke/Marshadow" className="botao"> <img src={botao} /></Link>
-
+                <Link to="/Poke/skarmory" className="botao"> <img src={botao} /></Link>
             </div>
         </div>
     );
