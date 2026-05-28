@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "pokemon",
+  "name": "Pokemoes/È isso ae",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "umbreon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "umbreon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "shinx.png",
       "type": "image/png",
       "sizes": "512x512"
     }
