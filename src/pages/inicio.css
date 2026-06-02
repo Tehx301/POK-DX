@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+  overflow: hidden; /* Esconde as barras de rolagem vertical e horizontal */
+  width: 100vw;     /* Garante que o corpo tenha a largura exata da tela */
+  height: 100vh;    /* Garante que o corpo tenha a altura exata da tela */
+}
 .conteiner{
+
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif /* altera a font */
 }
 
@@ -47,12 +53,12 @@
  margin-top: 9px;
 }
 .fundo img{
- position: absolute; /* Remove o elemento do fluxo da página e permite usar top, bottom, left e right */
- width: 207vh;   
-height: 100vh;
-margin-top: -100px;
-object-fit: cover; /* Preenche o box cortando os excessos e mantendo a proporção */
-z-index: -1; /* doixa o elemento na utima camada */
+  position: absolute; 
+  top: 0;             /* Alinha no topo absoluto da tela */
+  width: 100vw;       /* Ocupa toda a largura da janela */
+  height: 100vh;      /* Ocupa toda a altura da janela */
+  object-fit: cover;  /* Mantém a proporção cortando os excessos */
+  z-index: -1;        /* Fica atrás de tudo */
 }
 .treinador img{
     position: absolute;
