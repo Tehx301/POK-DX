@@ -18,7 +18,7 @@ function useFetchPokeapi(pokemon) {
     const getData = async () => {
       try {
         // busca um pokemon na api definida
-        const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`,
+        const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${endpoint}${pokemon}`,
           {
             // Headers para desativar o cache do navegador e garantir dados sempre novos
             headers: {

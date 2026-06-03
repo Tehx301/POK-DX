@@ -7,13 +7,14 @@ import TipoFantasma from "../assets/Pokemon.jpg";
 import TipoSteel from "../assets/metal.jpg";
 import atrasdocard from "../assets/fundoDoCard.jpg";
 import useFetchPokeapi from "../hooks/useFetchPokeApi";
-
-import { useParams } from "react-router-dom";
+import { useParams, Await } from "react-router-dom";
 
 function Poke() {
   const { id } = useParams();/* busca o id da uma api */
-  const { pokemons, loading, error } = useFetchPokeapi(id);
+  const { pokemons, loading, error } = useFetchPokeapi("pokemon",pokemon.id);
+const poke = useParams
 
+const [poke,setPokemonIngame] = userState([])
   if (loading) return (
     <div className="loader">
       carregando poquédex...
@@ -24,8 +25,17 @@ function Poke() {
       cocorreu um erro inesperado
     </div>
   );
-
-
+ const espacies = async () => {Await axios.get{pokemoes.specie}}
+ 
+const PokemonIngame =
+  {
+    "nome": pokemons.name,
+    "vida": pokemons.stats[0].stat.name,
+    "ataque":  pokemons.stats[0].base_stat,
+    "tipo": pokemons.stats[1].stat.name,
+    "evolucoes": "teste"
+  }
+}
   let imagemFundo = TipoFantasma;
   if (pokemons.types[0].type.name === 'grass' || pokemons.types[0].type.name === 'insect') {
     imagemFundo = TipoPlanta;

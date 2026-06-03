@@ -22,5 +22,13 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
+},
+{
+  "pokemoes"
+ "nome": "",         
+"tipo": "",     
+"HP": "",
+"base": "",
+"intermediario": "",
+"final": ""
 }
-  
