@@ -3,13 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-  overflow: hidden; /* Esconde as barras de rolagem vertical e horizontal */
-  width: 100vw;     /* Garante que o corpo tenha a largura exata da tela */
-  height: 100vh;    /* Garante que o corpo tenha a altura exata da tela */
-}
 .conteiner{
-
+  overflow: hidden; /* Esconde as barras de rolagem vertical e horizontal */
+  width: 100vw;  /* Garante que o corpo tenha a largura exata da tela */
+  height: 100vh; /* Garante que o corpo tenha a altura exata da tela */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif /* altera a font */
 }
 
@@ -63,6 +60,6 @@ body {
 .treinador img{
     position: absolute;
     margin-left: 739px;    
-    margin-top: 40px;  
+    margin-top: 140px;  
     z-index: 0; 
 }

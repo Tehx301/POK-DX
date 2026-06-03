@@ -5,7 +5,7 @@ import TipoInseto from "../assets/fundo_card.jpeg";
 import TipoPlanta from "../assets/planta.jpg";
 import TipoFantasma from "../assets/Pokemon.jpg";
 import TipoSteel from "../assets/metal.jpg";
-import atrasdocard from "../assets/fundo2.jpeg";
+import atrasdocard from "../assets/fundoDoCard.jpg";
 import useFetchPokeapi from "../hooks/useFetchPokeApi";
 
 import { useParams } from "react-router-dom";
