@@ -74,7 +74,6 @@
   margin-left: 240px;
  }
 
-
 .tipo-bug .pokemon-container{
     border: 3px solid rgb(255, 238, 0); 
     border-radius: 10px;
@@ -154,14 +153,13 @@
 }
 
 .imagenatrascard img{
-
   position: absolute; 
-  width: 205vh;   
-  height: 100vh;
-  margin-top: -317px;
-  margin-left: -640px;
-  object-fit: cover; /* Preenche o box cortando os excessos e mantendo a proporção */
-  z-index: -1; /* doixa o elemento na utima camada */
+  top: 0;             /* Alinha no topo absoluto da tela */
+  left: 0px;
+  width: 99vw;       /* Ocupa toda a largura da janela */
+  height: 100vh;      /* Ocupa toda a altura da janela */
+  object-fit: cover;  /* Mantém a proporção cortando os excessos */
+  z-index: -1;        /* Fica atrás de tudo */
 }
 
 @keyframes App-logo-spin {

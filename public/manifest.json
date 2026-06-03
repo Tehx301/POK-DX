@@ -10,12 +10,12 @@
     {
       "src": "umbreon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "236x236"
     },
     {
       "src": "shinx.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "489x510"
     }
   ],
   "start_url": ".",

@@ -51,11 +51,11 @@
 }
 .fundo img{
   position: absolute; 
-  top: 0;             /* Alinha no topo absoluto da tela */
-  width: 100vw;       /* Ocupa toda a largura da janela */
-  height: 100vh;      /* Ocupa toda a altura da janela */
+  top: 0;  /* Alinha no topo absoluto da tela */
+  width: 100vw;  /* Ocupa toda a largura da janela */
+  height: 100vh;  /* Ocupa toda a altura da janela */
   object-fit: cover;  /* Mantém a proporção cortando os excessos */
-  z-index: -1;        /* Fica atrás de tudo */
+  z-index: -1; /* Fica atrás de tudo */
 }
 .treinador img{
     position: absolute;
