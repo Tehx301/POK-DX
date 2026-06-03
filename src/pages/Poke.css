@@ -154,10 +154,11 @@
 }
 
 .imagenatrascard img{
+
   position: absolute; 
-  width: 207vh;   
+  width: 205vh;   
   height: 100vh;
-  margin-top: -320px;
+  margin-top: -317px;
   margin-left: -640px;
   object-fit: cover; /* Preenche o box cortando os excessos e mantendo a proporção */
   z-index: -1; /* doixa o elemento na utima camada */
