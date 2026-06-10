@@ -11,10 +11,10 @@ import { useParams, Await } from "react-router-dom";
 
 function Poke() {
   const { id } = useParams();/* busca o id da uma api */
-  const { pokemons, loading, error } = useFetchPokeapi("pokemon",pokemon.id);
-const poke = useParams
+  const { pokemoes, loading, error } = useFetchPokeapi(id);
+  /* const pokemon = useParams */
 
-const [poke,setPokemonIngame] = userState([])
+  /* const [poke,setPokemonIngame] = userState([]) */
   if (loading) return (
     <div className="loader">
       carregando poquédex...
@@ -25,32 +25,23 @@ const [poke,setPokemonIngame] = userState([])
       cocorreu um erro inesperado
     </div>
   );
- const espacies = async () => {Await axios.get{pokemoes.specie}}
- 
-const PokemonIngame =
-  {
-    "nome": pokemons.name,
-    "vida": pokemons.stats[0].stat.name,
-    "ataque":  pokemons.stats[0].base_stat,
-    "tipo": pokemons.stats[1].stat.name,
-    "evolucoes": "teste"
-  }
-}
+
+
   let imagemFundo = TipoFantasma;
-  if (pokemons.types[0].type.name === 'grass' || pokemons.types[0].type.name === 'insect') {
+  if (pokemoes.tipo === 'grass' || pokemoes.tipo === 'insect') {
     imagemFundo = TipoPlanta;
-  } else if (pokemons.types[0].type.name === 'ghost') {
+  } else if (pokemoes.tipo === 'ghost') {
     imagemFundo = TipoFantasma;
-  } else if (pokemons.types[0].type.name === 'bug') {
+  } else if (pokemoes.tipo === 'bug') {
     imagemFundo = TipoInseto;
   }
-  else if (pokemons.types[0].type.name === 'steel') {
+  else if (pokemoes.tipo === 'steel') {
     imagemFundo = TipoSteel;
   }
 
 
   return (
-    <div className={`pagina-poke tipo-${pokemons.types[0].type.name}`}>
+    <div className={`pagina-poke tipo-${pokemoes.tipo}`}>
       <div className="TipoPlanta">
 
         <div className="App" >
@@ -61,13 +52,12 @@ const PokemonIngame =
             <div className="pokemon-card">
 
               <div className="nomepokemon">
-                <h3>{pokemons.name}</h3>
+                <h3>{pokemoes.name}</h3>
               </div>
 
               <div className="imagen">
-                <img src={pokemons.sprites.front_default} alt={pokemons.name} />
+                <img src={pokemoes.imagen} alt={pokemoes.name} />
               </div>
-
 
               <div className="FundoDasCarta">
                 <div className="imagenatrascard">
@@ -79,15 +69,15 @@ const PokemonIngame =
               </div>
 
               <div className="HP">
-                <h3>{pokemons.stats[0].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
+                <h3>{pokemoes.vida}</h3>
               </div>
 
               <div className="attack">
-                <h3>{pokemons.stats[1].stat.name + ' ' + pokemons.stats[0].base_stat}</h3>
+                <h3>{pokemoes.ataque}</h3>
               </div>
 
               <div className="tipo">
-                <h3>{pokemons.types[0].type.name}</h3>
+                <h3>{pokemoes.tipo}</h3>
               </div>
 
             </div>
