@@ -10,7 +10,6 @@ function App() {
             <Routes>
                 <Route path="/" element={<Trainer />} />
                 <Route path="/Poke/:id" element={<Poke />} />
-            
             </Routes>
         </BrowserRouter>
     )

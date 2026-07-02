@@ -49,7 +49,7 @@ function Trainer() {
 
                     {/*Exibe a quantidade de pokébolas que tem*/}
                     <div className="pokebolas">
-                        <h3>você tem 6 pokebolas</h3>
+                        <h3>você tem 4 pokebolas</h3>
                     </div>
 
                     {/*links que usam a imagem com nome "botao" que é a imagen de uma pokebola, para navegar pelos pokemons*/}
