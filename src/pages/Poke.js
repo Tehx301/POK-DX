@@ -22,7 +22,7 @@ function Poke() {
   );
 
 
-
+  
 
   return (
 
@@ -40,7 +40,6 @@ function Poke() {
             <img src={fumdo} alt="fundo" />
           </div>
         </div>
-        <button></button>
 
         <div className="nomepokemon">
           <p>{pokemoes.nome}</p>

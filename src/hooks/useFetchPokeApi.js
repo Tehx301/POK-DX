@@ -128,9 +128,9 @@ function useFetchPokeapi(pokemon) {
           tipo: Otipo,
           imagen: pokemons.sprites.front_default,
           evolucao_chain: [
-            evolution.chain.species.name,
+           /*  evolution.chain.species.name,
             evolution.chain.evolves_to[0].species.name,
-            evolution.chain.evolves_to[0].evolves[0].species.name],
+            evolution.chain.evolves_to[0].evolves[0].species.name */],
       
         });
     } catch (err) {
