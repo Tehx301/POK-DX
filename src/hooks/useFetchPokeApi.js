@@ -120,7 +120,12 @@ function useFetchPokeapi(pokemon) {
   useEffect(() => {
     const setPoke = async () => {
       try {
-      
+      if(!evolution == true){
+        return evolution
+      }
+    else if(!evolution == false){
+console.log("nn")
+      }
         setPokemoes({
           nome: pokemons.name,
           vida: pokemons.stats[0].base_stat,
@@ -128,9 +133,9 @@ function useFetchPokeapi(pokemon) {
           tipo: Otipo,
           imagen: pokemons.sprites.front_default,
           evolucao_chain: [
-           /*  evolution.chain.species.name,
+             evolution.chain.species.name,
             evolution.chain.evolves_to[0].species.name,
-            evolution.chain.evolves_to[0].evolves[0].species.name */],
+            evolution.chain.evolves_to[0].evolves[0].species.name],
       
         });
     } catch (err) {
