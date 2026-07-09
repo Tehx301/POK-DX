@@ -120,25 +120,30 @@ function useFetchPokeapi(pokemon) {
   useEffect(() => {
     const setPoke = async () => {
       try {
-      if(!evolution == true){
-        return evolution
-      }
-    else if(!evolution == false){
-console.log("nn")
-      }
+
+        function VerSeTem(getData) {
+          if (evolution && evolution.length > 0) {
+            return evolution
+          }
+          else if (8) {
+            console.log("nn")
+          }
+          else if (8) {
+
+          }
+        }
         setPokemoes({
           nome: pokemons.name,
           vida: pokemons.stats[0].base_stat,
           ataque: pokemons.stats[1].base_stat,
           tipo: Otipo,
           imagen: pokemons.sprites.front_default,
-          evolucao_chain: [
-             evolution.chain.species.name,
+          evolution: [
+            evolution.chain.species.name,
             evolution.chain.evolves_to[0].species.name,
-            evolution.chain.evolves_to[0].evolves[0].species.name],
-      
+            evolution.chain.evolves_to[0].evolves[0].species.name]
         });
-    } catch (err) {
+      } catch (err) {
         console.log(err);
       }
     };
