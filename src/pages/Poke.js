@@ -79,6 +79,9 @@ function Poke() {
             </div>
           </div>
         </div>
+        <Link to="/">
+        <button className="voltaae"> inicio
+          </button></Link>
         <Link to={`/Poke/${pokemoes.evol1}`}className="bo" >
           <button className="bo"><img src={bo} /></button>
         </Link>
