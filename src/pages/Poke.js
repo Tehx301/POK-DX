@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Poke.css';
-import { Link } from "react-router-dom";
 import useFetchPokeapi from "../hooks/useFetchPokeApi";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import bo from "../assets/bol.png";
+import imgmetal from "../assets/metal.jpg";
+import imgSombrio from  "../assets/Pokemon.jpg";
+import imgnatureza from "../assets/planta.jpg";
+
 
 function Poke() {
   const { id } = useParams();/* busca o id da uma api */
-  const { pokemoes, loading, error, fumdo, evolution } = useFetchPokeapi(id);
+  const { pokemoes, loading, error, evolution } = useFetchPokeapi(id);
+  //  const [imgfundo, setImgfundo] = useState(bo) ;
 
 
 
@@ -22,8 +27,17 @@ function Poke() {
     </div>
   );
 
+  let fundo = bo;
+  if (pokemoes.tipo == 'corpo') {
+    fundo = imgSombrio
+  }
+  else if (pokemoes.tipo == 'natureza') {
+    fundo = imgnatureza
+  }
+  else if (pokemoes.tipo == 'terra') {
+    fundo = imgmetal
+  }
 
-       
 
 
   return (
@@ -33,34 +47,39 @@ function Poke() {
       <h1>poke card</h1>
       <div className={`pokemon-container tipo-${pokemoes.tipo}`}>
 
+        <div className="imagen2">
+          <img src={fundo} alt="fundo" />
+        </div>
+
         <div className="pokemon-card">
           <div className="imagen">
             <img src={pokemoes.imagen} />
-
-           <button>{evolution}</button>
-
-            <div className="imagen2">
-              <img src={fumdo} alt="fundo" />
-            </div>
 
 
             <div className="nomepokemon">
               <p>{pokemoes.nome}</p>
             </div>
 
+
+
             <div className="HP">
               <p>HP {pokemoes.vida}</p>
             </div>
 
+
+
             <div className="attack">
-              <p>attack {pokemoes.ataque}</p>
+              <p> attack {pokemoes.ataque}</p>
             </div>
+
+
 
             <div className="tipo">
               <p>{pokemoes.tipo}</p>
             </div>
           </div>
         </div>
+        <Link to="/evolution/pokemon" className="bo">{evolution}<img src={bo}/></Link>
       </div>
     </div>
   );

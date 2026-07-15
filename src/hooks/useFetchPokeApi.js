@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { getPokemonDB } from '../pages/utils/pokemonDB';
 import { openDB } from '../pages/utils/db';
-
 // Cria um Custom Hook que recebe o nome ou ID do pokemon como argumento
 function useFetchPokeapi(pokemon) {
   // Esse log roda toda vez que o componente que usa o hook renderiza ou atualiza
@@ -16,8 +15,8 @@ function useFetchPokeapi(pokemon) {
   const [evolution, setEvolution] = useState({});
   const [pokemoes, setPokemoes] = useState({});
   const [Otipo, setOtipo] = useState('');
-  const [fumdo, setFumdo] = useState({});
-
+  const [fumdo, setFumdo] = useState('');
+  const [evolucao, setEvolucao] = useState();
 
   // useEffect monitora mudanças e executa a requisição HTTP de forma assíncrona
   useEffect(() => {
@@ -121,17 +120,16 @@ function useFetchPokeapi(pokemon) {
     const setPoke = async () => {
       try {
 
-        function VerSeTem(getData) {
-          if (evolution && evolution.length > 0) {
-            return evolution
-          }
-          else if (8) {
-            console.log("nn")
-          }
-          else if (8) {
-
-          }
+        if (evolution.chain.species.name = true) {
+          return evolution
         }
+        if (evolution.chain.evolves_to[0].species.name = false) {
+          return evolution.chain.species.name
+        }
+        if (evolution.chain.evolves_to[0].evolves[0].species.name = false) {
+          return evolution.chain.species.name
+        }
+
         setPokemoes({
           nome: pokemons.name,
           vida: pokemons.stats[0].base_stat,
@@ -185,32 +183,7 @@ function useFetchPokeapi(pokemon) {
     manipularTipo();
   }, [pokemoes]);
 
-
-
-
-
-
-  useEffect(() => {
-    const manipularFundo = async () => {
-      try {
-        setFumdo({
-          corpo: "../assets/normal.jpg",
-          natureza: "../assets/planta.jpg",
-          sombra: "../assets/Pokemon.jpg",
-          terra: "../assets/metal.jpg",
-          agua: "../assets/agua.jpg",
-          fogo: "../assets/fogo.jpg",
-          mente: "../assets/psychic.jpg",
-          tempestade: "../assets/eletrico.jpg"
-        });
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    manipularFundo();
-  }, []);
-
-  return { pokemoes, loading, error, fumdo }
+  return { pokemoes, loading, error }
 }
 export default useFetchPokeapi;
 

@@ -30,6 +30,10 @@
 .tipo-natureza{
    background: #8fc263; 
 }
+.bo{
+
+}
+
 .pokemon-container {
   border: 3px solid rgb(255, 238, 0); 
   border-radius: 10px;
@@ -42,8 +46,9 @@
 }
 .nomepokemon {
   font-size: 23px;
-  margin-top: -7px;
-  margin-left: -300px;
+  margin-top: -152px;
+  margin-left: 10px;
+  position: absolute;
   }
  .imagen img{
   transform: scale(2.7); 
@@ -56,50 +61,81 @@
   border: 1px solid rgb(0, 0, 0);
   height: 180px;
   width: 300px; 
-  margin-left: -208px;
+  margin-left: 12px;
   margin-top: 16px; 
+  position: absolute;
 }
 .HP {
  font-size: 30px;
- margin-top: 230px;
- margin-left: -79px;
+ margin-top: 90px;
+ margin-left: 9px;
+ position: absolute;
 }
 .attack {
   font-size: 30px;
-  margin-top: 400px;
-  margin-left: 109px;
+  margin-top: 260px;
+  margin-left: 198px;
+  position: absolute;
  }
- .tipo-natureza .tipo {
+ .tipo{
   font-size: 26px;
-  margin-top: -9px;
-  margin-left: -54px;
+  margin-top: -155px;
+  margin-left: 218px;
+  position: absolute;
  }
  .tipo-corpo{
  background: #6c2a92;
  }
 
-  .tipo .tipo-sombra{
-    font-size: 24px;
-    margin-top: -9px;
-    margin-left: -40px;
+    .tipo-corpo .tipo {
+      font-size: 26px;
+      margin-top: -155px;
+      margin-left: 248px;
+      position: absolute;
      }
+
+     .tipo-corpo .attack {
+      font-size: 30px;
+      margin-top: 260px;
+      margin-left: 178px;
+      position: absolute;
+     }
+
 .tipo-terra{
  background: #b4b4b4; 
 } 
 .tipo-terra .imagen img{
-  transform: scale(2.3); 
+  transform: scale(2.2); 
   height: 100px;
   width: 100px;  
   margin-left: 120px;
-  margin-top: 40px; 
+  margin-top: 55px; 
 }
 
 .tipo-terra .tipo {
-  font-size: 25px;
-  margin-top: -445px;
-  margin-left: 253px;
+  font-size: 26px;
+  margin-top: -169px;
+  margin-left: 258px;
+  position: absolute;
  }
- 
+ .tipo-terra .HP {
+  font-size: 30px;
+  margin-top: 70px;
+  margin-left: 9px;
+  position: absolute;
+ }
+ .tipo-terra .attack {
+   font-size: 30px;
+   margin-top: 248px;
+   margin-left: 198px;
+   position: absolute;
+  }
+  .tipo-terra .nomepokemon {
+    font-size: 23px;
+    margin-top: -167px;
+    margin-left: 10px;
+    position: absolute;
+    }
  .App-link {
    color: #5b1f83;
   }
