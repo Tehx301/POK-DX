@@ -5,13 +5,13 @@ import useFetchPokeapi from "../hooks/useFetchPokeApi";
 import { useParams, Link } from "react-router-dom";
 import bo from "../assets/bol.png";
 import imgmetal from "../assets/metal.jpg";
-import imgSombrio from  "../assets/Pokemon.jpg";
+import imgSombrio from "../assets/Pokemon.jpg";
 import imgnatureza from "../assets/planta.jpg";
 
 
 function Poke() {
   const { id } = useParams();/* busca o id da uma api */
-  const { pokemoes, loading, error, evolution } = useFetchPokeapi(id);
+  const { pokemoes, loading, error, } = useFetchPokeapi(id);
   //  const [imgfundo, setImgfundo] = useState(bo) ;
 
 
@@ -79,7 +79,15 @@ function Poke() {
             </div>
           </div>
         </div>
-        <Link to="/evolution/pokemon" className="bo">{evolution}<img src={bo}/></Link>
+        <Link to={`/Poke/${pokemoes.evol1}`}className="bo" >
+          <button className="bo"><img src={bo} /></button>
+        </Link>
+        <Link to={`/Poke/${pokemoes.evol2}`} className="bo2">
+          <button className="bo2"><img src={bo} /></button>
+        </Link>
+        <Link to={`/Poke/${pokemoes.evol3}`} className="bo3">
+          <button className="bo3"><img src={bo} /></button>
+        </Link>
       </div>
     </div>
   );

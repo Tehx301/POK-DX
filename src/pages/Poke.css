@@ -30,10 +30,25 @@
 .tipo-natureza{
    background: #8fc263; 
 }
-.bo{
-
+ .bo{
+  background: #5b1f83;
+  margin-left: -300px; 
+  margin-top: 300px;
+  position: absolute;
 }
+ .bo2{
+background: #5b1f83;
 
+  margin-left: 00px; 
+  margin-top: 300px;
+  position: absolute;
+}
+.bo3{
+  background: #5b1f83;
+  margin-left: 240px; 
+  margin-top: 300px;
+  position: absolute;
+}
 .pokemon-container {
   border: 3px solid rgb(255, 238, 0); 
   border-radius: 10px;

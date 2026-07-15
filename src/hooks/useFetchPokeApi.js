@@ -120,15 +120,11 @@ function useFetchPokeapi(pokemon) {
     const setPoke = async () => {
       try {
 
-        if (evolution.chain.species.name = true) {
-          return evolution
-        }
-        if (evolution.chain.evolves_to[0].species.name = false) {
-          return evolution.chain.species.name
-        }
-        if (evolution.chain.evolves_to[0].evolves[0].species.name = false) {
-          return evolution.chain.species.name
-        }
+        const evol1 = evolution?.chain?.species?.name || null;
+
+        const evol2 = evolution?.chain.evolves_to[0]?.species?.name || null;
+
+        const evol3 = evolution?.chain.evolves_to[0]?.evolves_to[0]?.species?.name || null;
 
         setPokemoes({
           nome: pokemons.name,
@@ -136,10 +132,9 @@ function useFetchPokeapi(pokemon) {
           ataque: pokemons.stats[1].base_stat,
           tipo: Otipo,
           imagen: pokemons.sprites.front_default,
-          evolution: [
-            evolution.chain.species.name,
-            evolution.chain.evolves_to[0].species.name,
-            evolution.chain.evolves_to[0].evolves[0].species.name]
+            evol1,
+            evol2,
+            evol3
         });
       } catch (err) {
         console.log(err);
