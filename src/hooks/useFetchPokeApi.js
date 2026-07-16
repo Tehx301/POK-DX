@@ -142,7 +142,7 @@ function useFetchPokeapi(pokemon) {
       }
     };
     setPoke();
-  }, [evolution, pokemons, Otipo]);
+  }, [pokemons, Otipo]);
 
 
   useEffect(() => {

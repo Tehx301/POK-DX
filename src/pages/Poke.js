@@ -7,11 +7,14 @@ import bo from "../assets/bol.png";
 import imgmetal from "../assets/metal.jpg";
 import imgSombrio from "../assets/Pokemon.jpg";
 import imgnatureza from "../assets/planta.jpg";
-
+import avolutiom1 from "../assets/1.jpeg";
+import avolutiom2 from "../assets/2.jpeg";
+import avolutiom3 from "../assets/3.jpeg";
+import volta from "../assets/saida.jpg";
 
 function Poke() {
   const { id } = useParams();/* busca o id da uma api */
-  const { pokemoes, loading, error, } = useFetchPokeapi(id);
+  const { pokemoes, loading, error } = useFetchPokeapi(id);
   //  const [imgfundo, setImgfundo] = useState(bo) ;
 
 
@@ -80,17 +83,24 @@ function Poke() {
           </div>
         </div>
         <Link to="/">
-        <button className="voltaae"> inicio
+        <button className="voltaae"> <img src={volta} />
           </button></Link>
-        <Link to={`/Poke/${pokemoes.evol1}`}className="bo" >
-          <button className="bo"><img src={bo} /></button>
-        </Link>
-        <Link to={`/Poke/${pokemoes.evol2}`} className="bo2">
-          <button className="bo2"><img src={bo} /></button>
-        </Link>
-        <Link to={`/Poke/${pokemoes.evol3}`} className="bo3">
-          <button className="bo3"><img src={bo} /></button>
-        </Link>
+
+        {pokemoes?.evol1 && (
+          <Link to={`/Poke/${pokemoes.evol1}`} className="bo" >
+            <button className="bo"><img src={avolutiom1} /></button>
+          </Link>
+        )}
+        {pokemoes?.evol2 && (
+          <Link to={`/Poke/${pokemoes.evol2}`} className="bo2">
+            <button className="bo2"><img src={avolutiom2} /></button>
+          </Link>
+        )}
+        {pokemoes?.evol3 && (
+          <Link to={`/Poke/${pokemoes.evol3}`} className="bo3">
+            <button className="bo3"><img src={avolutiom3} /></button>
+          </Link>
+        )}
       </div>
     </div>
   );

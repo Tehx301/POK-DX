@@ -30,23 +30,35 @@
 .tipo-natureza{
    background: #8fc263; 
 }
- .bo{
-  background: #5b1f83;
-  margin-left: -300px; 
-  margin-top: 300px;
-  position: absolute;
-}
- .bo2{
-background: #5b1f83;
 
-  margin-left: 00px; 
-  margin-top: 300px;
+.voltaae img{
+  height: 50px;
+  width: 100px; 
+  margin-left: -40px; 
+ margin-top: -500px;
+}
+ .bo img{
+  margin-left: 300px; 
+  margin-top: -130px;
+  height: 200px;
+  width: 200px; 
+  border-radius: 60px;
   position: absolute;
 }
-.bo3{
-  background: #5b1f83;
-  margin-left: 240px; 
-  margin-top: 300px;
+ .bo2 img{
+  height: 200px;
+  width: 200px; 
+  margin-left: 300px; 
+  margin-top: 130px;
+  border-radius: 60px;
+  position: absolute;
+}
+.bo3 img{
+  height: 200px;
+  width: 200px; 
+  margin-left: 300px; 
+  margin-top: 400px;
+  border-radius: 60px;
   position: absolute;
 }
 
@@ -93,10 +105,10 @@ background: #5b1f83;
  margin-left: 9px;
  position: absolute;
 }
-.attack {
+.attack{
   font-size: 30px;
   margin-top: 260px;
-  margin-left: 198px;
+  margin-left: 185px;
   position: absolute;
  }
  .tipo{
